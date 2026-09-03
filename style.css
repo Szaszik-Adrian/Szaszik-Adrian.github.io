@@ -1,0 +1,21 @@
+header {
+    background-color: lightgray;
+}
+
+nav {
+    background-color: lightblue;
+}
+
+.content {
+    display: flex;
+}
+
+main {
+    width: 75%;
+    background-color: lightgreen;
+}
+
+aside {
+    width: 25%;
+    background-color: lightyellow;
+}
