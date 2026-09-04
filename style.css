@@ -1,43 +1,293 @@
+.content {
+    display: flex;
+}
+
+.profile-picture {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th {
+    background-color: #1e293b;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #0284c7;
+}
+
+.study-boundary {
+    position: absolute;
+    left: 75%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #dc2626;
+}
+
+.not-completed {
+    background-color: #f8fafc;
+}
+
+.passed {
+    background-color: #dcfce7;
+}
+
+.failed {
+    background-color: #fee2e2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2937;
+}
+
 header {
-    background-color: lightgray;
+    background-color: #0f172a;
+    color: white;
+    padding: 25px 40px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
 }
 
 nav {
-    background-color: lightblue;
+    background-color: #1e293b;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 30px;
     display: flex;
 }
 
 nav a {
     display: block;
-    padding: 14px 18px;
+    padding: 16px 20px;
     text-decoration: none;
+    color: white;
+    transition: 0.2s;
 }
 
 nav a:hover {
-    background-color: lightgray;
+    background-color: #334155;
 }
 
 nav a.active {
-    background-color: gray;
+    background-color: #0284c7;
     color: white;
 }
 
 .content {
     display: flex;
+    max-width: 1400px;
+    margin: 30px auto;
+    gap: 25px;
+    padding: 0 25px;
 }
 
 main {
     width: 75%;
-    background-color: lightgreen;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
 }
 
 aside {
     width: 25%;
-    background-color: lightyellow;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+h1,
+h2,
+h3 {
+    color: #0f172a;
+}
+
+main h1 {
+    border-bottom: 3px solid #0284c7;
+    padding-bottom: 10px;
+}
+
+.swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.swot-grid section {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #0284c7;
+}
+
+.home-main {
+    width: 100%;
+}
+
+.home-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+    background-color: #0f172a;
+    color: white;
+    border-radius: 12px;
+}
+
+.hero-text {
+    width: 60%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    margin-top: 0;
+    color: #38bdf8;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-label {
+    color: #38bdf8;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-image-container {
+    width: 35%;
+    text-align: center;
+}
+
+.hero-image {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.hero-button:hover {
+    background-color: #0369a1;
+}
+
+
+.home-section {
+    margin-top: 35px;
+}
+
+.home-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 4px solid #0284c7;
+}
+
+.info-card h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.info-card p {
+    line-height: 1.5;
+}
+
+
+.home-list {
+    background-color: #f8fafc;
+    padding: 25px 25px 25px 45px;
+    border-radius: 12px;
+}
+
+.home-list li {
+    margin: 10px 0;
+}
+
+
+.home-cta {
+    margin-top: 35px;
+    padding: 30px;
+    background-color: #e0f2fe;
+    border-radius: 12px;
+}
+
+.home-cta h2 {
+    margin-top: 0;
 }
