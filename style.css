@@ -291,3 +291,30 @@ main h1 {
 .home-cta h2 {
     margin-top: 0;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header .hz-logo {
+    height: 36px;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+.external-links {
+    list-style: none;
+    padding: 0;
+}
+
+.external-links li {
+    margin-bottom: 14px;
+}
+
+.external-links a {
+    color: #0369a1;
+}
